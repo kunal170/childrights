@@ -1,0 +1,66 @@
+<%- include("partials/header"); -%>
+
+<div class="text-center">
+  <form class="form-signin" action="/registration" method="POST">
+  <img class="mb-4" src="images/mother.jpg" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+  <h4 class="info">Enter Your Name</h4>
+  <label for="inputText" class="sr-only">Your Name</label>
+  <input type="text" id="inputText" class="form-control" name="fullname" placeholder="Your  Name" required autofocus>
+  <h4 class="info">Enter Your Email Address</h4>
+  <label for="inputEmail" class="sr-only">Email Address</label>
+  <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Your Email" required>
+  <h4 class="info">Enter Your Whatsapp no.</h4>
+  <label for="inputText" class="sr-only">Mobile No.</label>
+  <input type="text" id="inputText" class="form-control" name="mobile" placeholder="Mobile No." required>
+  <h4 class="info">Enter your full address</h4>
+  <label for="inputText" class="sr-only">Address</label>
+  <input type="text" id="inputText" class="form-control" name="add" placeholder="Address" required>
+  <h4 class="info">Enter Your Age</h4>
+  <label for="inputText" class="sr-only">Age</label>
+  <input type="text" id="inputText" class="form-control" name="age" placeholder="Age" required>
+  <h4 class="info">Enter Your Profession</h4>
+  <label for="inputText" class="sr-only">Profession</label>
+  <input type="text" id="inputText" class="form-control" name="profession" placeholder="Profession" required>
+  <h4 class="info">Source you got to know about us</h4>
+  <div class="check">
+  <div class="checkbox mb-3">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="newspaper">Newspaper
+    </label>
+  </div>
+   <div class="checkbox mb-3">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="internet">Internet
+    </label>
+  </div>
+   <div class="checkbox mb-3">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="media">Media
+    </label>
+  </div>
+   <div class="checkbox mb-3">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="social-media">Social-media
+    </label>
+  </div>
+   <div class="checkbox mb-3">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="friend">Friends/Relatives
+    </label>
+  </div>
+   <div class="checkbox mb-3">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="other">Other
+    </label>
+  </div>
+  </div>
+  <h4 class="info">Why would you like to join us?</h4>
+  <label for="inputText" class="sr-only">Purpose</label>
+      <textarea class="form-control" id="inputText" rows="5"></textarea>
+  <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Register</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+</form>
+</div>
+
+<%- include("partials/footer"); -%>
